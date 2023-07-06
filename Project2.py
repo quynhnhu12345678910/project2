@@ -15,12 +15,12 @@ import plotly.express as px
 
 #getting the dataset
 
-pro = pd.read_csv('C:/Users/NQing/OneDrive/Máy tính/Project2/Coffee_Chain.csv')
+pro = pd.read_csv('https://raw.githubusercontent.com/quynhnhu12345678910/project2/main/Coffee_Chain.csv')
 
 #dash app
 
 app = dash.Dash(__name__)
-
+server=app.server
 #layout
 app.layout = html.Div(children = [
     html.Div([
